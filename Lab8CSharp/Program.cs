@@ -17,7 +17,8 @@ namespace Lab8CSharp
                 Console.WriteLine("2. Task 2");
                 Console.WriteLine("3. Task 3");
                 Console.WriteLine("4. Task 4");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Task 5");
+                Console.WriteLine("6. Exit");
                 Console.WriteLine("=========================================================");
                 Console.Write("Enter your choice >>> ");
                 string? choice = Console.ReadLine();
@@ -34,10 +35,13 @@ namespace Lab8CSharp
                         Task3.Task3_();
                         break;
                     case "4":
-                        //Task3.Task3_();
+                        Task4.Task4_();
                         break;
 
                     case "5":
+                        Task5.Task5_();
+                        break;
+                    case "6":
                         return;
 
                     default:
