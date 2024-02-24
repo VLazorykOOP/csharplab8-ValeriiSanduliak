@@ -28,7 +28,7 @@ namespace Lab8CSharp
                         Task1.Task1_();
                         break;
                     case "2":
-                        //Task2.Task2_();
+                        Task2.Task2_();
                         break;
                     case "3":
                         //Task3.Task3_();
