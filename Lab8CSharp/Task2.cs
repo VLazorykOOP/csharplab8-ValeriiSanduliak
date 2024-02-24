@@ -20,7 +20,7 @@ namespace Lab8CSharp
 
                 File.WriteAllText(outputFilePath, resultText);
 
-                Console.WriteLine("Replacement completed. Result written to output.txt");
+                Console.WriteLine("Replacement completed. Result written to outputTask2.txt");
             }
             catch (Exception ex)
             {
