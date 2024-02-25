@@ -38,15 +38,26 @@ namespace Lab8CSharp
                     string newEmail = Console.ReadLine();
 
                     inputText = Regex.Replace(inputText, emailToReplace, newEmail);
+
+                    using (StreamWriter sw = new StreamWriter(outputFilePath))
+                    {
+                        sw.Write(inputText);
+                    }
                 }
-
-                string outputText = string.Join(Environment.NewLine, matches);
-
-                using (StreamWriter sw = new StreamWriter(outputFilePath))
+                else if (replaceOption.ToLower() == "n")
                 {
-                    sw.Write(outputText);
+                    using (StreamWriter sw = new StreamWriter(outputFilePath))
+                    {
+                        foreach (Match match in matches)
+                        {
+                            sw.WriteLine(match.Value);
+                        }
+                    }
                 }
-
+                else
+                {
+                    Console.WriteLine("Invalid option. Please enter 'y' or 'n'.");
+                }
                 Console.WriteLine($"Results have been written to the file {outputFilePath}");
             }
             catch (Exception ex)

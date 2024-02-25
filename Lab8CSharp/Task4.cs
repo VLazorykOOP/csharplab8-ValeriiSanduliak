@@ -10,7 +10,7 @@ namespace Lab8CSharp
     {
         public static void Task4_()
         {
-            double[] numbers = { 3.5, 6.2, 8.9, 2, 10.4, 4.0 };
+            double[] numbers = { 3.5, 6.2, 8.9, 2.0, 10.4, 4.0 };
             double threshold = 7.0;
 
             using (
